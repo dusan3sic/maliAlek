@@ -14,8 +14,3 @@ def active(segment, activity):
     if(zbir > silence): return True
     return False
 
-
-def log_spectrum(magnituda):
-  for i, m in enumerate(magnituda):
-    magnituda[i] = math.log10(abs(m) ** 2 + 0.1)
-  return magnituda
